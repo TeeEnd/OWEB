@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8", name="viewport", content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+
+    <style>
+        .full{
+            text-align: center;
+            margin: 100px 0;
+        }
+        #edit {
+            margin: 0 390px;
+        }
+        #center {
+            margin: 10px 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body> 
+<div class="full">
+    <fieldset id="edit">
+        <div id="center">
+        <h1>Order Pizza!</h1>
+        <div> 
+
+        <div>
+            <p><b>Select the pizza size:</b></p>
+            <input type="radio" name="size1" value="big">
+            <label for="size1">Big</label><br>
+            <input type="radio" name="size2" value="medium">
+            <label for="size2">Medium</label><br>
+            <input type="radio" name="size3" value="small">
+            <label for="size3">Small</label><br>
+        </div>
+        <p><b>Select the crust type:</b></p>
+        <select name="crust">
+            <option value="type1">Deep dish</option>
+            <option value="type2">Neapolitan Crust</option>
+            <option value="type3">Gluten-Free Crust</option>
+            <option value="type4">Whole Wheat or Multigrain Crust</option>
+            <option value="type1">Thin Crust Pizzas</option>
+            <option value="type1">Stuffed Crust</option>
+            <option value="type1">Thick Crust</option>
+          </select>
+        <div>
+            <p><b>Select the filler:</b></p>
+            <form>          
+                <input type="checkbox" name="filler1" value="Sausages">
+                <label for="filler1">Sausages</label><br>
+                <input type="checkbox" name="filler2" value="Pepper">
+                <label for="filler2">Pepper</label><br>
+                <input type="checkbox"  name="filler3" value="Mushrooms">
+                <label for="filler3">Mushrooms</label><br><br>
+              </form>
+        </div>
+        <div>
+            <form >
+                <label for="name"><b>Name:</b></label>
+                <input type="text" name="name">
+                <label for="lname"><b>Phone:</b></label>
+                <input type="text"  name="number" >
+              </form> <br>
+        </div>
+        <div>
+            <textarea  name="textcomment" rows="4" cols="35" placeholder="Message:"></textarea>
+        </div>
+            <form>
+                <button type="send" value="Send" onclick="alert('The order is sent.')">Sent</button>
+                <input type="reset" value="Reset"/>
+            </form>
+
+
+
+            </div>
+        
+            
+        </div>
+    </fieldset>
+</div>
+
+</body>
+
+
+</html>
