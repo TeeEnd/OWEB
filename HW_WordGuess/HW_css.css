@@ -1,0 +1,45 @@
+body
+ { font-family: Arial, sans-serif;
+     text-align: center; 
+     padding: 20px;
+     color: #dba1f7;
+
+  width: 600px;
+  border: 15px solid #7353da;
+  padding: 50px;
+  margin: 100px 300px;
+  border-radius: 17px;
+  box-shadow: 0 0 5px #7353da,
+  0 0 15px #7353da, 0 0 10px #7353da, 0 0 50px #7353da, 0 0 150px #7353da;
+  background-color: #362745;
+     }
+#message { margin-top: 20px; }
+#myButton
+{
+    
+    margin-top: 50px;
+}
+#resetButton { 
+    display: none; 
+    justify-content: center;
+}
+.Btn{
+
+    box-shadow: 0 0 5px #c929ce;
+    border-radius: 50px;
+    background-color: #c929ce;
+    border-color: #c929ce;
+ 
+} 
+.Btn:hover {
+    box-shadow: 0 0 5px #c929ce,
+    0 0 25px #c929ce, 0 0 50px #c929ce, 0 0 100px #c929ce, 0 0 200px #c929ce;
+   
+    
+}
+.h1 {
+    background-image: linear-gradient(60deg, #167fff, #c929ce);
+    background-clip: text;
+    color: transparent;
+
+}
