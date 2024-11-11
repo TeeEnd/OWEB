@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anketa.css" type="text/css">
+    <title>Анкета</title>
+</head>
+<body>
+
+    <div class="menu__bar">
+        <!--<img src="assets/workinaction-logo.png">-->
+    <h1 class="logo">PEUGEOT</h1>
+    
+      <nav id="stop-bar">
+
+
+          
+                
+        <ul>
+            <div id="logo_centre">
+                   <img id="main_img" src="assets/logo.webp"> 
+                </div> 
+
+            <li class="li1"> <a href="Peugeot_main.html">Дома</a></li>
+            <li class="li1"><a href="avtomobili.html">Автомобили</a></li>
+            <li class="li1"><a href="pregled.html">Преглед</a></li>
+            <li class="li1"><a href="#">Повеќе<i class="fas fa-caret-down"></i> </a>
+
+                <div class="dropdown__menu">
+                     <ul>
+                        <li><a href="anketa.html">Анкета</a></li>
+                        <li><a href="najava.html">Најава</a></li>
+                </ul> 
+                </div>
+
+
+                 
+              
+              
+            </li>
+        </ul>
+     </nav>
+    </div>
+
+
+    
+<div id="tablecolor">
+    <table border="1" class="table2">
+       <tr>
+            <th align="left">
+            <p>
+                Оценката за GMC компанијата е мошне важна. Потребно ни е ваше мислење
+                за понатамошна подобра соработка: продавач-клиент. </p><br>
+               
+                    <p>-Целта на оваа анкета е мерење на задоволството на клиентите на услугите на компанијата за автомобилска продажба.</p>
+                    <p>-Спроведување на анкетата е целосна анонимна.</p>
+                    <p>-Начинот на пополнување е со означување на еден од понудените одговори.</p>
+
+            <p>Ажурирајте ги вашите податоци</p><br>
+        </th>
+       </tr>
+       <tr>
+        <th align="left">
+            <p>Внесете ваша возраст</p><br>
+
+            <form>
+                <input type="radio" id="age1" name="age" value="30">
+                <label for="age1"> од 18 до 30</label><br>
+                <input type="radio" id="age2" name="age" value="60">
+                <label for="age2"> од 31 до 55</label><br>  
+                <input type="radio" id="age3" name="age" value="100">
+                <label for="age3"> над 55 години</label><br><br>
+            </form>
+        </th>
+       </tr>
+       <tr>
+        <th align="left">
+            <p>Ваш пол</p><br>
+            <form>
+                <input type="radio" id="male" value="male" name="sex">
+                <label for="male"> Машки</label><br>
+                <input type="radio" id="female" value="female" name="sex">
+                <label for="female"> Женски</label><br>  
+            </form>
+        </th>
+       </tr>
+       <tr>
+        <th align="left">
+            <p>
+                Етничка припадност
+            </p><br>
+            <form>
+                <input type="radio" id="mak" value="mak" name="ethnicity">
+                <label for="mak"> Македонска</label><br>
+                <input type="radio" id="al" value="al" name="ethnicity">
+                <label for="al"> Албанска</label><br>
+                <input type="radio" id="srb" value="srb" name="ethnicity">
+                <label for="srb"> Српска</label><br>
+                <input type="radio" id="tur" value="tur" name="ethnicity">
+                <label for="tur"> Турска</label><br>
+                <input type="radio" id="vla" value="vla" name="ethnicity">
+                <label for="vla"> Влашка</label><br>
+                <input type="radio" id="bosh" value="bosh" name="ethnicity">
+                <label for="bosh"> Бошњачка</label><br>
+                <input type="radio" id="frugi" value="drugi" name="ethnicity">
+                <label for="drugi"> Друго</label><br>
+            </form>
+        </th>
+       </tr>
+       <tr>
+        <th align="left">
+            <p>Оценете го пристапот продавач-клиент</p><br>
+            <form>
+                <input type="radio" id="mn_nezadovolen" value="mn_nezadovolen" name="zadovolstvo">
+                <label for="mn_nezadovolen"> 1-многу незадоволен</label><br>
+                <input type="radio" id="nezadovolen" value="nezadovolen" name="zadovolstvo">
+                <label for="nezadovolen"> 2-незадоволен</label><br>
+                <input type="radio" id="del_zadovolen" value="del_zadovolen" name="zadovolstvo">
+                <label for="del_zadovolen"> 3-делумно задоволен</label><br>
+                <input type="radio" id="zadovolen" value="zadovolen" name="zadovolstvo">
+                <label for="zadovolen"> 4-задоволен</label><br>
+                <input type="radio" id="mnogu_zadovolen" value="mnogu_zadovolen" name="zadovolstvo">
+                <label for="mnogu_zadovolen"> 5-многу задоволен</label><br>
+            </form>
+        </th>
+       </tr>
+       <tr>
+        <th align="left">
+            <p>Оценете го квалитетот на продажниот салон</p><br>
+            <form>
+                <input type="radio" id="mn_nezadovolen" value="mn_nezadovolen" name="nezadovolen">
+                <label for="mn_nezadovolen"> 1-многу незадоволен</label><br>
+                <input type="radio" id="nezadovolen" value="nezadovolen" name="nezadovolen">
+                <label for="nezadovolen"> 2-незадоволен</label><br>
+                <input type="radio" id="del_zadovolen" value="del_zadovolen" name="nezadovolen">
+                <label for="del_zadovolen"> 3-делумно задоволен</label><br>
+                <input type="radio" id="zadovolen" value="zadovolen" name="nezadovolen">
+                <label for="zadovolen"> 4-задоволен</label><br>
+                <input type="radio" id="mnogu_zadovolen" value="mnogu_zadovolen" name="nezadovolen">
+                <label for="mnogu_zadovolen"> 5-многу задоволен</label><br>
+            </form>
+        </th>
+       </tr>
+       <tr>
+        <th align="left">
+            <p>Предлози за подобрување на соработка со клиентите и самата компанија</p><br>
+            <p>
+                <label for="comments"></label>
+                <br />
+                <textarea class="area" rows="7" cols="31" id="comments">
+                </textarea>
+                </p>
+        </th>
+       </tr>
+
+    </table>
+</body>
+<footer>
+    <div id="foot-model">
+
+    
+        <p class="footer1" ><b>PEUGEOT, Des technologies élégantes.</b></p>
+        <p class="footer2">Нурнете се во бесконечните граници на елегантната технологија. <br>Peugeot ви нуди нов свет на моќности и доживувања, <br> нов допир на модерниот свет. <br><br><br><i>Peugeot е повеќе од Франција.</i></p>
+        <img id="logo-footer" src="assets/logo_2.png" alt="logo-footer">
+        
+    </div>
+        <p class="footer4"><a  href="mailto:peugeot_mkd@example.com" style='color: rgb(255, 255, 255);'>peugeot_mkd@example.com</a></p>
+        <div id="foot-model1">
+    
+        <p class="footer3">Бидете во контакт со нас!</p><br>
+        <div id="sites">
+                <abbr title="Instagram"><img src="assets/instagram_logo.png" alt="instagram" style="width:42px;height:42px;"></abbr>
+                <abbr title="Facebook"><img src="assets/facebook.png" alt="facebook" style="width:42px;height:42px;"></abbr>
+                <abbr title="YouTube"><img src="assets/youtube.png" alt="youtube" style="width:42px;height:42px;"></abbr>
+        </div>
+        
+    
+    
+      </div>
+         <div id="link1">
+            <a href="Peugeot_main.html">Дома</a><br><br>
+            <a href="avtomobili.html">Автомобили</a><br><br>
+            <a href="pregled.html">Преглед</a><br><br>
+         </div>
+         <div id="link2">
+            <a href="anketa.html">Анкета</a><br><br>
+            <a href="najava.html">Најава</a><br><br>
+         </div>
+         <hr class="horizontal">
+         <div id="link3">
+            <p class="p1">Последен пат апдејтирано: 11.11.2024</p>
+            <p class="p2">Уредник на страницата: Теодора Ендровска</p>
+            <p class="p3">Oдговорно лице: Кристофер Луис</p>
+            </div>
+</footer>
+</html>

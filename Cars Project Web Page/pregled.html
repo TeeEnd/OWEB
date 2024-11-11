@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pregled.css" type="text/css">
+    <title>Преглед</title>
+   
+</head>
+<body>
+    <div class="menu__bar">
+        <!--<img src="assets/workinaction-logo.png">-->
+    <h1 class="logo">PEUGEOT</h1>
+    
+      <nav id="stop-bar">
+
+
+          
+                
+        <ul>
+            <div id="logo_centre">
+                   <img id="main_img" src="assets/logo.webp"> 
+                </div> 
+
+            <li class="li1"> <a href="Peugeot_main.html">Дома</a></li>
+            <li class="li1"><a href="avtomobili.html">Автомобили</a></li>
+            <li class="li1"><a href="pregled.html">Преглед</a></li>
+            <li class="li1"><a href="#">Повеќе<i class="fas fa-caret-down"></i> </a>
+
+                <div class="dropdown__menu">
+                     <ul>
+                        <li><a href="anketa.html">Анкета</a></li>
+                        <li><a href="najava.html">Најава</a></li>
+                </ul> 
+                </div>
+
+
+                 
+              
+              
+            </li>
+        </ul>
+     </nav>
+    </div>
+
+
+<!--PEUGEOT RCZ-->
+
+    <div id="behind" class="car1">
+        <h1 class="title1" >PEUGEOT RCZ</h1>
+        
+        <img class="ppc1" src="assets/pregled_car1.jpg">
+       
+        <p class="take1">
+        
+            <h2>Comment Section</h2>
+
+            <!-- Text area for comments -->
+            <textarea id="commentInput" placeholder="Write your comment..."></textarea><br>
+        
+            <!-- Buttons for adding and deleting comments -->
+            <button class="button1" onclick="addComment()">Add Comment</button>
+            <button class="button1" onclick="deleteComment()">Delete Previous Comment</button>
+        
+            <!-- Display area for the comment -->
+            <div id="commentDisplay" style="margin-top: 50px; font-weight: bold;"></div>
+        
+            <hr style="width: 100%; margin: 20px 0;">
+        
+            <!-- Like/Dislike Section -->
+            <h2 class="h2">Like & Dislike</h2>
+            <div class="like-dislike">
+                <button class="button" onclick="likePost()">👍 Like</button>
+                <button class="button" onclick="dislikePost()">👎 Dislike</button>
+            </div>
+            <div class="counter">Likes: <span id="likeCount1">0</span></div>
+        
+            <script>
+                // Function to add a comment
+                function addComment() {
+                    const commentInput = document.getElementById('commentInput').value.trim();
+                    const commentDisplay = document.getElementById('commentDisplay');
+        
+                    if (commentInput) {
+                        commentDisplay.textContent = commentInput;
+                        document.getElementById('commentInput').value = ''; // Clear the text area
+                    } else {
+                        alert('Please write a comment before adding.');
+                    }
+                }
+        
+                // Function to delete the previous comment
+                function deleteComment() {
+                    const commentDisplay = document.getElementById('commentDisplay');
+                    if (commentDisplay.textContent) {
+                        commentDisplay.textContent = '';
+                    } else {
+                        alert('No comment to delete.');
+                    }
+                }
+        
+                // Variables to keep track of likes
+                let likeCount1 = 0;
+        
+                // Function to increase like count
+                function likePost() {
+                    likeCount1++;
+                    document.getElementById('likeCount1').textContent = likeCount1;
+                }
+        
+                // Function to decrease like count (dislike)
+                function dislikePost() {
+                    if (likeCount1 > 0) {
+                        likeCount1--;
+                        document.getElementById('likeCount1').textContent = likeCount1;
+                    }
+                }
+            </script>
+    
+    
+          </p>
+    
+    </div>
+    <!--PEUGEOT 508 PSE-->
+
+    <div id="behind" class="car2">
+        <h1 class="title1" >PEUGEOT 508 PSE</h1>
+        
+        <img class="ppc1" src="assets/pregled_car2.avif">
+       
+        <p class="take1">
+        
+            <h2>Comment Section</h2>
+
+            <!-- Text area for comments -->
+            <textarea id="commentInput" placeholder="Write your comment..."></textarea><br>
+        
+            <!-- Buttons for adding and deleting comments -->
+            <button class="button1" onclick="addComment()">Add Comment</button>
+            <button class="button1" onclick="deleteComment()">Delete Previous Comment</button>
+        
+            <!-- Display area for the comment -->
+            <div id="commentDisplay" style="margin-top: 50px; font-weight: bold;"></div>
+        
+            <hr style="width: 100%; margin: 20px 0;">
+        
+            <!-- Like/Dislike Section -->
+            <h2 class="h2">Like & Dislike</h2>
+            <div class="like-dislike">
+                <button class="button" onclick="likePost()">👍 Like</button>
+                <button class="button" onclick="dislikePost()">👎 Dislike</button>
+            </div>
+            <div class="counter">Likes: <span id="likeCount2">0</span></div>
+        
+            <script>
+                // Function to add a comment
+                function addComment() {
+                    const commentInput = document.getElementById('commentInput').value.trim();
+                    const commentDisplay = document.getElementById('commentDisplay');
+        
+                    if (commentInput) {
+                        commentDisplay.textContent = commentInput;
+                        document.getElementById('commentInput').value = ''; // Clear the text area
+                    } else {
+                        alert('Please write a comment before adding.');
+                    }
+                }
+        
+                // Function to delete the previous comment
+                function deleteComment() {
+                    const commentDisplay = document.getElementById('commentDisplay');
+                    if (commentDisplay.textContent) {
+                        commentDisplay.textContent = '';
+                    } else {
+                        alert('No comment to delete.');
+                    }
+                }
+        
+                // Variables to keep track of likes
+                let likeCount2 = 0;
+        
+                // Function to increase like count
+                function likePost() {
+                    likeCount2++;
+                    document.getElementById('likeCount2').textContent = likeCount2;
+                }
+        
+                // Function to decrease like count (dislike)
+                function dislikePost() {
+                    if (likeCount2 > 0) {
+                        likeCount2--;
+                        document.getElementById('likeCount2').textContent = likeCount2;
+                    }
+                }
+            </script>
+    
+    
+          </p>
+    
+    </div>
+    <!--PEUGEOT NEW 508 SW-->
+
+    <div id="behind" class="car3">
+        <h1 class="title1" >PEUGEOT NEW 508 SW</h1>
+        
+        <img class="ppc1" src="assets/pregled_car3.jpg">
+       
+        <p class="take1">
+        
+            <h2>Comment Section</h2>
+
+            <!-- Text area for comments -->
+            <textarea id="commentInput" placeholder="Write your comment..."></textarea><br>
+        
+            <!-- Buttons for adding and deleting comments -->
+            <button class="button1" onclick="addComment()">Add Comment</button>
+            <button class="button1" onclick="deleteComment()">Delete Previous Comment</button>
+        
+            <!-- Display area for the comment -->
+            <div id="commentDisplay" style="margin-top: 50px; font-weight: bold;"></div>
+        
+            <hr style="width: 100%; margin: 20px 0;">
+        
+            <!-- Like/Dislike Section -->
+            <h2 class="h2">Like & Dislike</h2>
+            <div class="like-dislike">
+                <button class="button" onclick="likePost()">👍 Like</button>
+                <button class="button" onclick="dislikePost()">👎 Dislike</button>
+            </div>
+            <div class="counter">Likes: <span id="likeCount3">0</span></div>
+        
+            <script>
+                // Function to add a comment
+                function addComment() {
+                    const commentInput = document.getElementById('commentInput').value.trim();
+                    const commentDisplay = document.getElementById('commentDisplay');
+        
+                    if (commentInput) {
+                        commentDisplay.textContent = commentInput;
+                        document.getElementById('commentInput').value = ''; // Clear the text area
+                    } else {
+                        alert('Please write a comment before adding.');
+                    }
+                }
+        
+                // Function to delete the previous comment
+                function deleteComment() {
+                    const commentDisplay = document.getElementById('commentDisplay');
+                    if (commentDisplay.textContent) {
+                        commentDisplay.textContent = '';
+                    } else {
+                        alert('No comment to delete.');
+                    }
+                }
+        
+                // Variables to keep track of likes
+                let likeCount3 = 0;
+        
+                // Function to increase like count
+                function likePost() {
+                    likeCount3++;
+                    document.getElementById('likeCount3').textContent = likeCount3;
+                }
+        
+                // Function to decrease like count (dislike)
+                function dislikePost() {
+                    if (likeCount3 > 0) {
+                        likeCount3--;
+                        document.getElementById('likeCount3').textContent = likeCount3;
+                    }
+                }
+            </script>
+    
+    
+          </p>
+    
+    </div>
+
+     <!--PEUGEOT 2024 - spec 9X8-->
+    <div id="behind" class="car4">
+        <h1 class="title1" >PEUGEOT 2024 - spec 9X8</h1>
+        
+        <img class="ppc1" src="assets/pregeld_car4.jpg">
+       
+        <p class="take1">
+        
+            <h2>Comment Section</h2>
+
+            <!-- Text area for comments -->
+            <textarea id="commentInput" placeholder="Write your comment..."></textarea><br>
+        
+            <!-- Buttons for adding and deleting comments -->
+            <button class="button1" onclick="addComment()">Add Comment</button>
+            <button class="button1" onclick="deleteComment()">Delete Previous Comment</button>
+        
+            <!-- Display area for the comment -->
+            <div id="commentDisplay" style="margin-top: 50px; font-weight: bold;"></div>
+        
+            <hr style="width: 100%; margin: 20px 0;">
+        
+            <!-- Like/Dislike Section -->
+            <h2 class="h2">Like & Dislike</h2>
+            <div class="like-dislike">
+                <button class="button" onclick="likePost()">👍 Like</button>
+                <button class="button" onclick="dislikePost()">👎 Dislike</button>
+            </div>
+            <div class="counter">Likes: <span id="likeCount">0</span></div>
+        
+            <script>
+                // Function to add a comment
+                function addComment() {
+                    const commentInput = document.getElementById('commentInput').value.trim();
+                    const commentDisplay = document.getElementById('commentDisplay');
+        
+                    if (commentInput) {
+                        commentDisplay.textContent = commentInput;
+                        document.getElementById('commentInput').value = ''; // Clear the text area
+                    } else {
+                        alert('Please write a comment before adding.');
+                    }
+                }
+        
+                // Function to delete the previous comment
+                function deleteComment() {
+                    const commentDisplay = document.getElementById('commentDisplay');
+                    if (commentDisplay.textContent) {
+                        commentDisplay.textContent = '';
+                    } else {
+                        alert('No comment to delete.');
+                    }
+                }
+        
+                // Variables to keep track of likes
+                let likeCount = 0;
+        
+                // Function to increase like count
+                function likePost() {
+                    likeCount++;
+                    document.getElementById('likeCount').textContent = likeCount;
+                }
+        
+                // Function to decrease like count (dislike)
+                function dislikePost() {
+                    if (likeCount > 0) {
+                        likeCount--;
+                        document.getElementById('likeCount').textContent = likeCount;
+                    }
+                }
+            </script>
+    
+    
+          </p>
+    
+    </div>
+
+
+
+    
+</body>
+<footer>
+    <div id="foot-model">
+
+    
+        <p class="footer1" ><b>PEUGEOT, Des technologies élégantes.</b></p>
+        <p class="footer2">Нурнете се во бесконечните граници на елегантната технологија. <br>Peugeot ви нуди нов свет на моќности и доживувања, <br> нов допир на модерниот свет. <br><br><br><i>Peugeot е повеќе од Франција.</i></p>
+        <img id="logo-footer" src="assets/logo_2.png" alt="logo-footer">
+        
+    </div>
+        <p class="footer4"><a  href="mailto:peugeot_mkd@example.com" style='color: rgb(255, 255, 255);'>peugeot_mkd@example.com</a></p>
+        <div id="foot-model1">
+    
+        <p class="footer3">Бидете во контакт со нас!</p><br>
+        <div id="sites">
+                <abbr title="Instagram"><img src="assets/instagram_logo.png" alt="instagram" style="width:42px;height:42px;"></abbr>
+                <abbr title="Facebook"><img src="assets/facebook.png" alt="facebook" style="width:42px;height:42px;"></abbr>
+                <abbr title="YouTube"><img src="assets/youtube.png" alt="youtube" style="width:42px;height:42px;"></abbr>
+        </div>
+        
+    
+    
+      </div>
+         <div id="link1">
+            <a href="Peugeot_main.html">Дома</a><br><br>
+            <a href="avtomobili.html">Автомобили</a><br><br>
+            <a href="pregled.html">Преглед</a><br><br>
+         </div>
+         <div id="link2">
+            <a href="anketa.html">Анкета</a><br><br>
+            <a href="najava.html">Најава</a><br><br>
+         </div>
+         <hr class="horizontal">
+         <div id="link3">
+            <p class="p1">Последен пат апдејтирано: 11.11.2024</p>
+            <p class="p2">Уредник на страницата: Теодора Ендровска</p>
+            <p class="p3">Oдговорно лице: Кристофер Луис</p>
+            </div>
+</footer>
+</html>
